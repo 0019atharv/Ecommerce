@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<%- include('../partials/navbar') %>
+<div class="container" style="margin-top: 10%; margin-left: auto; margin-right: auto; max-width: 500px;">
+    <form action="/products/<%= product._id %>?_method=PATCH" method="post">
+        <input value="<%= product.name %>" type="text" placeholder="Product Name" name="name"> <br> <br>
+        <input value="<%= product.image %>" type="text" placeholder="Image URL" name="image"> <br> <br>
+        <input value="<%= product.price %>" type="number" placeholder="Product Price" name="price"> <br> <br>
+        <input value="<%= product.description %>" type="text" placeholder="Product Description" name="description"> <br> <br>
+        <button>Save</button>
+    </form>
+</div>
+
+    <%- include('../partials/footer') %>

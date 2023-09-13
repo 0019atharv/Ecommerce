@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<%- include('../partials/navbar') %>
+<form action="/products" method="post" style="margin-left: 10%; margin-top: 5%;">
+    <div class="form-group">
+      <label for="productName">Product Name</label>
+      <div class="input-icon">
+        <i class="fas fa-tags"></i>
+        <input type="text" id="productName" placeholder="Product Name" name="name">
+      </div>
+    </div><br>
+    <div class="form-group">
+      <label for="imageUrl">Image URL</label>
+      <div class="input-icon">
+        <i class="fas fa-image"></i>
+        <input type="text" id="imageUrl" placeholder="Image URL" name="image">
+      </div>
+    </div><br>
+    <div class="form-group">
+      <label for="productPrice">Product Price</label>
+      <div class="input-icon">
+        <i class="fas fa-dollar-sign"></i>
+        <input type="number" id="productPrice" placeholder="Product Price" name="price">
+      </div>
+    </div><br>
+    <div class="form-group">
+      <label for="productDescription">Product Description</label>
+      <div class="input-icon">
+        <i class="fas fa-file-alt"></i>
+        <input type="text" id="productDescription" placeholder="Product Description" name="description">
+      </div>
+    </div><br>  
+    <button class="btn btn-primary">Submit</button>
+  </form>
+
+    <%- include('../partials/footer') %>
